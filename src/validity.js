@@ -1,5 +1,5 @@
-export function validity(choice){
-  if (choice === "RUB" || "CAD" || "EUR" || "JPY" || "KZT"){
-    return choice;
+export function validity(output){
+  if (Number.isNaN(output)){
+    alert("invalid selection");
   }
 }
