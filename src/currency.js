@@ -13,8 +13,8 @@ export class ExchangeRate {
       return false;
     }
   }
-  equuivilancy(conversionAmount, conversionChooice){
-   let output = conversionAmount * conversionChooice;
-    return output;
-  }
+  // equuivilancy(conversionAmount, conversionChoice){
+  //  let output = conversionAmount * this.conversion_rates.conversionChoice;
+  //   return output;
+  // }
 }

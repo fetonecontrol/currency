@@ -15,7 +15,7 @@ $(document).ready(function() {
     (async () => {
       let currencyList = new ExchangeRate();
       const response = await currencyList.getRate("USD");
-      console.log(response.conversion_rates.conversionChoice);
+      console.log(conversionAmnt * response.conversion_rates.RUB);
       // let output = currencyList.equuivilancy(conversionAmnt, conversionChoice);
       // $('#output').text(output);
     })();
