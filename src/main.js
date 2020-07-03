@@ -18,7 +18,7 @@ $(document).ready(function() {
     (async () => {
       let currencyList = new ExchangeRate();
       const response = await currencyList.getRate();
-      let output = currencyList.equivilancy(conversionAmnt, response.conversion_rates.LPO);
+      let output = currencyList.equivilancy(conversionAmnt, response.conversion_rates[conversionChoice]);
       validity(output);
       $('.output').text(output.toFixed(2) + " " + conversionChoice);
     })();
