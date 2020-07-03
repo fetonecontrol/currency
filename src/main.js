@@ -20,7 +20,8 @@ $(document).ready(function() {
       const response = await currencyList.getRate();
       let output = currencyList.equivilancy(conversionAmnt, response.conversion_rates[conversionChoice]);
       validity(output);
-      $('.output').text(output.toFixed(2) + " " + conversionChoice);
+
+      $('.output').text(parseInt(output).toFixed(2) + " " + conversionChoice);
     })();
   });
 });
