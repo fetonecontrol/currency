@@ -18,5 +18,16 @@ export class ExchangeRate {
     let output = amount * rate;
     return output;
   }
+  growth(, exponent) {
+    growthArray= [];
+    for (i=0; i<7300; i++){
+    let outputExp = number * exponent;
+    exponent *= .90;
+    number += outputExp;
+    growthArray.push(number.toFixed(2));
+    }
+  console.log(growthArray);
+  }
+  
 
 }
