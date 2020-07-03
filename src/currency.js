@@ -13,4 +13,8 @@ export class ExchangeRate {
       return false;
     }
   }
+  equuivilancy(conversionAmount, conversionChooice){
+   let output = conversionAmount * conversionChooice;
+    return output;
+  }
 }

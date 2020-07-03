@@ -7,11 +7,15 @@
     <div class="container">
       <form id="currency-form">
         <h1>Find Exchange Rate!</h1>
+        <form>
+          <label for="conversionAmnt">Enter an Amount in U.S. Dollars</label>
+          <input id="conversionAmnt" type="text">
+        </form>
         <select id="currency-select" name="currency">
-          <option value="1"></option>
-          <option value="2">Saab</option>
-          <option value="3">Fiat</option>
-          <option value="4">Audi</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="CAD">Canadian Dollar</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="EUR">Euro</option>
         </select>
         <button class="btn btn-success" id="weatherLocation" type="submit">Convert!</button>
       </form>

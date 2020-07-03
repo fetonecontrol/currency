@@ -5,16 +5,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-  $('#currency-form').submit(function() {
+  $('#currency-form').click(function() {
     event.preventDefault();
     const conversionAmnt = $('#conversionAmnt').val();
-    const convrsionChoice = $('#currency-select').val();
+    const conversionChoice = $('#currency-select').val();
+    console.log(conversionChoice);
+    console.log(conversionAmnt);
 
     (async () => {
       let currencyList = new ExchangeRate();
       const response = await currencyList.getRate("USD");
-      console.log(response);
+      console.log(response.conversion_rates.conversionChoice);
+      // let output = currencyList.equuivilancy(conversionAmnt, conversionChoice);
+      // $('#output').text(output);
     })();
-
   });
 });
