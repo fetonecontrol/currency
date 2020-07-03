@@ -17,7 +17,7 @@ $(document).ready(function() {
       const response = await currencyList.getRate();
       let output = currencyList.equivilancy(conversionAmnt, response.conversion_rates[conversionChoice]);
       console.log(output);
-      $('#output').text(output);
+      $('.output').text(output);
     })();
   });
 });
