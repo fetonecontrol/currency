@@ -1,37 +1,56 @@
-# _{Application Name}_
+# _{Currency Exchange}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Converts U.S. dollars into other currencys}, {7-3-20_
 
-#### By _**{List of contributors}**_
+#### By _**{Frederick Ernest}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Behavior 1: Applicatio makes an API call and returns any error in a message if call cannot be completed
+
+Input :  $10.00 to Korean Won
+Output : Error: 429, Too many requests
+
+Behavior 2: User may input U.S. dollar amount and return converted amount at current exchange rate in currency of their chocie.
+
+Input : $10.00 U.S. Dollars to Phillipine Pesos
+Output : 494.90 Phillipine Pesos
+
+Input : $10.00 U.S. Dollars to Mexican Pesos
+Output : 165.19 Mexican Pesos
+
+Behavior 3 : User asks for currency type or information that API does not have
+Input : $10.00 U.S. Dollars to Klingon Darsek
+Output : Error, API cannot resolve this request, currency type not found
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _To have total functionality, user will need their own distinct API key._
+* _Navigate your browser to (https://www.exchangerate-api.com/)_
+* _Input email @ and click "Get Key", you'll be taken to a dashboard with you API key._
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Afterward, navigate your browser to https://github.com/fetonecontrol/currency and download repository to your desktop_
+* _Alternatively use the commmand "git clone https://github.com/fetonecontrol/currency" to clone repo to directory of your choice_
+* _Drag entire directory to your favorite code editor to open, or navigate in the command line to the root directory holding the project directory, and use "code •project name• to open_
+* _In your command line interface, use "npm run install" to install dependancies_
+* _Use "npm run start" to open a live development server, or "npm run build" to build a distribution.
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_{no known bugs}_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{Contact Frederick Ernest @ frederick.ernest@gmail.com for all queries}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{Uses HTML, CSS, JavaScript, and impliments API calls, ES6 features like classes and template literals}_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Open source under the MIT licence.
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_{Frederick Ernest}_**
