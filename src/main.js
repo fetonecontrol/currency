@@ -10,11 +10,12 @@ $(document).ready(function() {
     const conversionAmnt = $('#conversionAmnt').val();
     const conversionChoice = $('#currency-select').val();
 
+
     (async () => {
       let currencyList = new ExchangeRate();
       const response = await currencyList.getRate();
       let output = currencyList.equivilancy(conversionAmnt, response.conversion_rates[conversionChoice]);
-      $('.output').text(output);
+      $('.output').text(output.toFixed(2) + " " + conversionChoice);
     })();
   });
 });

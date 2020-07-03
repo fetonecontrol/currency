@@ -8,8 +8,10 @@ export class ExchangeRate {
       } else {
         console.log(response.statusText);
       }
+      console.log(jsonifiedResponse);
       return jsonifiedResponse;
     } catch(error) {
+      console.log(error);
       return false;
     }
   }
