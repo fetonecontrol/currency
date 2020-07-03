@@ -13,13 +13,9 @@ export class ExchangeRate {
       return false;
     }
   }
-  // equuivilancy(conversionAmount, rub, cad, jpy, euro){
-  // let rubVal = rub;
-  // let cadVAl = cad;
-  // let jpyVal = jpy;
-  // let eurVal = eur;
+  equivilancy(amount, rate){
+    let output = amount * rate;
+    return output;
+  }
 
-  //  let output = conversionAmount * this.conversion_rates.conversionChoice;
-  //   return output;
-  // }
 }
