@@ -6,11 +6,11 @@ export class ExchangeRate {
       if (response.ok && response.status == 200) {
         jsonifiedResponse = await response.json();
       } else {
-        console.log(response.statusText);
+        jsonifiedResponse = false;
       }
       return jsonifiedResponse;
     } catch(error) {
-      console.log(error);
+      console.error(error + "everything is NOT hokey pokey.");
       return false;
     }
   }
